@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PageLogin</string>
+    <string name="continue_guest"><u>Continue as a guest</u></string>
+    <string name="fruzz_text"><b>Fruzz</b>digital</string>
 </resources>

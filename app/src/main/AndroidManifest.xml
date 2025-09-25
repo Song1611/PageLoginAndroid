@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PageLogin">
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginHomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

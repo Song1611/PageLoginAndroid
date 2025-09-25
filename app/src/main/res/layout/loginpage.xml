@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeLoginActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="784dp"
+        android:backgroundTint="@android:color/white"
+        android:contentDescription="Back"
+        android:paddingStart="30dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="8dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/left_arrow"
+        app:iconGravity="textStart"
+        app:iconTint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@android:color/darker_gray"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:ellipsize="none"
+        android:text="@string/welcome"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="@+id/button"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxBackgroundColor="#F7F8F9"
+        app:boxStrokeColor="#E8ECF4"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Enter your email"
+            android:textColorHint="#A0A0A0"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@null"/><!-- placeholder màu xám nhạt -->
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxBackgroundColor="#F7F8F9"
+        app:boxStrokeColor="#E8ECF4"
+        app:endIconMode="password_toggle"
+        app:layout_constraintTop_toBottomOf="@id/inputEmail"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Enter your password"
+        android:textColorHint="#A0A0A0"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@null"
+        android:inputType="textPassword"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

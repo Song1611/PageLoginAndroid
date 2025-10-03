@@ -25,7 +25,7 @@ public class LoginHomeActivity extends AppCompatActivity {
         });
         MaterialButton loginButton = findViewById(R.id.buttonLogin);
         loginButton.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginHomeActivity.this, LoginPageActivity.class);
+            Intent intent = new Intent(LoginHomeActivity.this, ProfilePageActivity.class);
             startActivity(intent);
         });
     }
